@@ -1,3 +1,4 @@
+//데이터와 css 받아오기
 import { agoraStatesDiscussions } from "./data";
 require("./style.css");
 
