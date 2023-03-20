@@ -1,3 +1,6 @@
+import { agoraStatesDiscussions } from "./data";
+require("./style.css");
+
 // index.html을 열어서 agoraStatesDiscussions 배열 요소를 확인하세요.
 console.log(agoraStatesDiscussions);
 let data;
@@ -34,9 +37,7 @@ const convertToDiscussion = (obj) => {
 
   const discussionInformation = document.createElement("div");
   discussionInformation.className = "discussion__information";
-  discussionInformation.textContent = `${obj.author} / ${new Date(
-    obj.createdAt
-  ).toLocaleTimeString()}`;
+  discussionInformation.textContent = `${obj.author} / ${new Date(obj.createdAt).toLocaleTimeString()}`;
   discussionContent.append(discussionTitle, discussionInformation);
 
   const checked = document.createElement("p");
@@ -127,8 +128,7 @@ form.addEventListener("submit", (event) => {
     author: author.value,
     answer: null,
     bodyHTML: textbox.value,
-    avatarUrl:
-      "https://avatars.githubusercontent.com/u/12145019?s=64&u=5c97f25ee02d87898457e23c0e61b884241838e3&v=4",
+    avatarUrl: "https://avatars.githubusercontent.com/u/12145019?s=64&u=5c97f25ee02d87898457e23c0e61b884241838e3&v=4",
   };
   data.unshift(obj);
 
