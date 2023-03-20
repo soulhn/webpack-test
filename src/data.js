@@ -1,3 +1,4 @@
+// JS 파일에서 접근 가능하게 export
 export const agoraStatesDiscussions = [
   {
     id: "D_kwDOHOApLM4APjJi",
